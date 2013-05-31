@@ -1,0 +1,4 @@
+c:\users\virus\documents\visual studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3Libs\bin\Debug\Com.Andyshi.NH3Lib.dll
+c:\users\virus\documents\visual studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3Libs\bin\Debug\Com.Andyshi.NH3Lib.pdb
+c:\users\virus\documents\visual studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3Libs\obj\Debug\Com.Andyshi.NH3Lib.dll
+c:\users\virus\documents\visual studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3Libs\obj\Debug\Com.Andyshi.NH3Lib.pdb

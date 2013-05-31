@@ -1,0 +1,10 @@
+c:\users\virus\documents\visual studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3\bin\Debug\Com.Andyshi.NH3.dll
+c:\users\virus\documents\visual studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3\bin\Debug\Com.Andyshi.NH3.pdb
+c:\users\virus\documents\visual studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3\bin\Debug\Iesi.Collections.dll
+c:\users\virus\documents\visual studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3\bin\Debug\NHibernate.dll
+c:\users\virus\documents\visual studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3\obj\Debug\Com.Andyshi.NH3.csprojResolveAssemblyReference.cache
+c:\users\virus\documents\visual studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3\obj\Debug\Com.Andyshi.NH3.dll
+c:\users\virus\documents\visual studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3\obj\Debug\Com.Andyshi.NH3.pdb
+C:\Users\virus\Documents\Visual Studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3\bin\Debug\hibernate.cfg.xml
+C:\Users\virus\Documents\Visual Studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3\bin\Debug\Mappings\Category.hbm.xml
+C:\Users\virus\Documents\Visual Studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3\bin\Debug\Mappings\Product.hbm.xml

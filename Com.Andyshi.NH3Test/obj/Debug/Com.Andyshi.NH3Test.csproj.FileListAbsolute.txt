@@ -1,0 +1,14 @@
+c:\users\virus\documents\visual studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3Test\bin\Debug\Com.Andyshi.NH3Test.dll
+c:\users\virus\documents\visual studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3Test\bin\Debug\Com.Andyshi.NH3Test.pdb
+c:\users\virus\documents\visual studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3Test\bin\Debug\Com.Andyshi.NH3.dll
+c:\users\virus\documents\visual studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3Test\bin\Debug\Iesi.Collections.dll
+c:\users\virus\documents\visual studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3Test\bin\Debug\NHibernate.dll
+c:\users\virus\documents\visual studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3Test\bin\Debug\nunit.framework.dll
+c:\users\virus\documents\visual studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3Test\bin\Debug\nunit.mocks.dll
+c:\users\virus\documents\visual studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3Test\bin\Debug\Com.Andyshi.NH3.pdb
+c:\users\virus\documents\visual studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3Test\obj\Debug\Com.Andyshi.NH3Test.csprojResolveAssemblyReference.cache
+c:\users\virus\documents\visual studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3Test\obj\Debug\Com.Andyshi.NH3Test.dll
+c:\users\virus\documents\visual studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3Test\obj\Debug\Com.Andyshi.NH3Test.pdb
+C:\Users\virus\Documents\Visual Studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3Test\bin\Debug\hibernate.cfg.xml
+C:\Users\virus\Documents\Visual Studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3Test\bin\Debug\Mappings\Category.hbm.xml
+C:\Users\virus\Documents\Visual Studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3Test\bin\Debug\Mappings\Product.hbm.xml
