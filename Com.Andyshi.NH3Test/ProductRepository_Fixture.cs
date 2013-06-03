@@ -30,7 +30,7 @@ namespace FirstSolution.Test
         [SetUp]
         public void SetupContext()
         {
-            //new SchemaExport(_configuration).Execute(false, true, false);
+            new SchemaExport(_configuration).Execute(false, true, false);
         }
 
 
@@ -72,25 +72,61 @@ namespace FirstSolution.Test
         [Test]
         public void find_test()
         {
-            var person = new Com.Andyshi.NH3.Domain.Product() { Name = "optimistic", Category = new Category() { Name = "cate1" }, Discontinued = false };
+            var cate1 = new Com.Andyshi.NH3.Domain.Category() { Name = "cate1" };
+            var person = new Com.Andyshi.NH3.Domain.Product() { Name = "optimistic", Category = cate1, Discontinued = false };
             using (var session = this._sessionFactory.OpenSession())
             {
-                using (var tx = session.BeginTransaction())
+                using (var tran = session.BeginTransaction())
                 {
                     session.Save(person);
 
-                    tx.Commit();
+                    session.Save(cate1);
+                    tran.Commit();
+                }
+            }
+            var p1 = new Com.Andyshi.NH3.Domain.Product();
+            var p2 = new Com.Andyshi.NH3.Domain.Product();
+            using (var session = this._sessionFactory.OpenSession())
+            {
+                using (var tran = session.BeginTransaction())
+                {
+
+                    p1 = session.Get<Com.Andyshi.NH3.Domain.Product>(person.Id);
+                
+
+                }
+            }
+            using (var session = this._sessionFactory.OpenSession())
+            {
+                using (var tran = session.BeginTransaction())
+                {
+
+                  
+                    p2 = session.Get<Com.Andyshi.NH3.Domain.Product>(person.Id);
+
                 }
             }
 
+            p1.Name = "versoin1";
             using (var session = this._sessionFactory.OpenSession())
             {
-                using (var tx = session.BeginTransaction())
+                using (var tran = session.BeginTransaction())
                 {
-               
-                    session.Save(person);
+                    session.Update(p1);
+                    tran.Commit();
                 }
             }
+            p2.Name = "versoin2";
+            using (var session = this._sessionFactory.OpenSession())
+            {
+                using (var tran = session.BeginTransaction())
+                {
+                    session.Update(p2);
+                    tran.Commit();
+                }
+            }
+
+
         }
     }
 }

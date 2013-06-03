@@ -13,7 +13,8 @@
     <version name="Version" unsaved-value="null"/>
     <property name="Name"></property>
     <property name="Discontinued" />
-    
+    <property name="CreateTime"></property>
+    <property name="ModifyTime"/>
     
     <many-to-one name="Category" 
                  column="CategoryId" 
