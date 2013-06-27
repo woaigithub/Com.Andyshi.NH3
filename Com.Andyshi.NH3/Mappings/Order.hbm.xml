@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                  assembly="Com.Andyshi.NH3"
+                   namespace="Com.Andyshi.NH3.Domain">
+  <class name="Order" table="Orders" 
+         optimistic-lock="version">
+    <id name="ID">
+      <generator class="guid"></generator>
+    </id>
+    <version name="Version" unsaved-value="null"/>
+    
+    <property name="CreateTime"></property>
+    <property name="ModifyTime"/>
+
+    <set name="Items" generic="true" inverse="true" cascade="all" >
+      <key column="OrderID" not-null="true"></key>
+      <one-to-many class="OrderItem"/>
+    </set>
+           
+  </class>
+  
+</hibernate-mapping>

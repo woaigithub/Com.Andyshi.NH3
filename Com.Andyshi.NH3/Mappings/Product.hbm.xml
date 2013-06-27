@@ -3,11 +3,8 @@
                   assembly="Com.Andyshi.NH3"
                    namespace="Com.Andyshi.NH3.Domain">
   <class name="Product" table="Products" 
-         optimistic-lock="version"
-         lazy="true"
-			   dynamic-update="true"
-         dynamic-insert="true">
-    <id name="Id">
+         optimistic-lock="version">
+    <id name="ID">
       <generator class="guid"></generator>
     </id>
     <version name="Version" unsaved-value="null"/>
@@ -15,11 +12,19 @@
     <property name="Discontinued" />
     <property name="CreateTime"></property>
     <property name="ModifyTime"/>
+    <!--<property name="IsDelete" type="NHibernate.Type.YesNoType, NHibernate" column="IsDelete">-->
+    <property name="IsDelete" type="Com.Andyshi.NH3.Domain.YesNo10, Com.Andyshi.NH3" column="IsDelete">
+      <column name="IsDelete" sql-type="char(1)" default="0" not-null="true"></column>
+    </property>
+    <property name="Status">
+      <column name="Status" sql-type="varchar(10)" default="1" not-null="true"></column>
+    </property>
     
-    <many-to-one name="Category" 
-                 column="CategoryId" 
-                 lazy="false"
-                 class="Com.Andyshi.NH3.Domain.Category, FirstSolution.Domain"></many-to-one>
+    <many-to-one lazy="false"
+                 name="Category"
+                 column="CategoryID"
+                 
+                  class="Category"></many-to-one>
                  
   </class>
   

@@ -12,3 +12,10 @@ c:\users\virus\documents\visual studio 2010\Projects\Com.Andyshi.NH3Solution\Com
 C:\Users\virus\Documents\Visual Studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3Test\bin\Debug\hibernate.cfg.xml
 C:\Users\virus\Documents\Visual Studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3Test\bin\Debug\Mappings\Category.hbm.xml
 C:\Users\virus\Documents\Visual Studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3Test\bin\Debug\Mappings\Product.hbm.xml
+C:\Users\virus\Documents\Visual Studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3Test\bin\Debug\Mappings\Order.hbm.xml
+C:\Users\virus\Documents\Visual Studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3Test\bin\Debug\Mappings\OrderItem.hbm.xml
+C:\Users\virus\Documents\Visual Studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3Test\bin\Debug\log4net.config
+C:\Users\virus\Documents\Visual Studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3Test\bin\Debug\HibernatingRhinos.Profiler.Appender.dll
+C:\Users\virus\Documents\Visual Studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3Test\bin\Debug\log4net.dll
+C:\Users\virus\Documents\Visual Studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3Test\bin\Debug\Mappings\Customer.hbm.xml
+C:\Users\virus\Documents\Visual Studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3Test\bin\Debug\HibernatingRhinos.Profiler.Appender.NHibernateLog4Net.dll

@@ -31,8 +31,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HibernatingRhinos.Profiler.Appender">
+      <HintPath>..\Com.Andyshi.NH3Libs\Libs\HibernatingRhinos.Profiler.Appender.dll</HintPath>
+    </Reference>
+    <Reference Include="HibernatingRhinos.Profiler.Appender.NHibernateLog4Net">
+      <HintPath>..\Com.Andyshi.NH3Libs\Libs\HibernatingRhinos.Profiler.Appender.NHibernateLog4Net.dll</HintPath>
+    </Reference>
     <Reference Include="Iesi.Collections">
       <HintPath>..\Com.Andyshi.NH3Libs\Libs\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\Com.Andyshi.NH3Libs\Libs\log4net.dll</HintPath>
     </Reference>
     <Reference Include="NHibernate">
       <HintPath>..\Com.Andyshi.NH3Libs\Libs\NHibernate.dll</HintPath>
@@ -56,20 +65,27 @@
   <ItemGroup>
     <Compile Include="CategoryRepositoryTest.cs" />
     <Compile Include="GenerateSchema_Fixture.cs" />
+    <Compile Include="OrderRepositoryTest.cs" />
     <Compile Include="ProductRepository_Fixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="hibernate.cfg.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <SubType>Designer</SubType>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Com.Andyshi.NH3\Com.Andyshi.NH3.csproj">
       <Project>{8F132BEE-7AD2-4E20-9A9A-6EB44235C06E}</Project>
       <Name>Com.Andyshi.NH3</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Com.Andyshi.NH3\hibernate.cfg.xml">
+      <Link>hibernate.cfg.xml</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Com.Andyshi.NH3\log4net.config">
+      <Link>log4net.config</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

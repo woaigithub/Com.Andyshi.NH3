@@ -15,32 +15,34 @@ namespace FirstSolution.Test
     public class ProductRepository_Fixture
     {
 
-        private ISessionFactory _sessionFactory;
-        private Configuration _configuration;
+        //private ISessionFactory _sessionFactory;
+        //private Configuration _configuration;
+
+
+        private ISession _session;
 
         [TestFixtureSetUp]
         public void TestFixtureSetUp()
         {
-            this._configuration = new Configuration();
-            this._configuration.Configure();
-            this._configuration.AddAssembly(typeof(Com.Andyshi.NH3.Domain.Product).Assembly);
-            this._sessionFactory = this._configuration.BuildSessionFactory();
 
+            _session = SessionManager.Instance.CreateSession();
         }
+
         [SetUp]
         public void SetupContext()
         {
-            new SchemaExport(_configuration).Execute(false, true, false);
+            //new SchemaExport(_configuration).Execute(false, true, false);
+        }
+
+        [TestFixtureTearDown]
+        public void TestFixtureTearDown()
+        {
+            _session.Close();
         }
 
 
-
-
-
-
-
         [Test]
-        public void add_new_with_category()
+        public void add_product_with_category()
         {
             var category = new Com.Andyshi.NH3.Domain.Category();
             category.Name = "category1";
@@ -52,81 +54,33 @@ namespace FirstSolution.Test
             product.Name = "product1";
             product.Category = category;
             product.Discontinued = false;
+            product.Status = Status.Yes;
 
             var productRepository = new Com.Andyshi.NH3.Repositories.ProductRepository();
             productRepository.Add(product);
 
-
-            var p = productRepository.GetById(product.Id);
-
-            p.Name = "safsfd";
-            productRepository.Update(p);
-
-            p.Name = "000000000";
-            productRepository.Update(p);
+            var p = productRepository.GetById(product.ID);
 
             Assert.IsNotNull(p.Category);
             Assert.AreEqual(category.Name, p.Category.Name);
 
         }
         [Test]
-        public void find_test()
+        public void find_category_and_products()
         {
-            var cate1 = new Com.Andyshi.NH3.Domain.Category() { Name = "cate1" };
-            var person = new Com.Andyshi.NH3.Domain.Product() { Name = "optimistic", Category = cate1, Discontinued = false };
-            using (var session = this._sessionFactory.OpenSession())
-            {
-                using (var tran = session.BeginTransaction())
-                {
-                    session.Save(person);
 
-                    session.Save(cate1);
-                    tran.Commit();
-                }
-            }
-            var p1 = new Com.Andyshi.NH3.Domain.Product();
-            var p2 = new Com.Andyshi.NH3.Domain.Product();
-            using (var session = this._sessionFactory.OpenSession())
-            {
-                using (var tran = session.BeginTransaction())
-                {
 
-                    p1 = session.Get<Com.Andyshi.NH3.Domain.Product>(person.Id);
-                
+            var categoryrepository = new Com.Andyshi.NH3.Repositories.CategoryRepository();
+            var category = categoryrepository.First();
 
-                }
-            }
-            using (var session = this._sessionFactory.OpenSession())
-            {
-                using (var tran = session.BeginTransaction())
-                {
 
-                  
-                    p2 = session.Get<Com.Andyshi.NH3.Domain.Product>(person.Id);
 
-                }
-            }
+            Assert.IsNotNull(category);
 
-            p1.Name = "versoin1";
-            using (var session = this._sessionFactory.OpenSession())
-            {
-                using (var tran = session.BeginTransaction())
-                {
-                    session.Update(p1);
-                    tran.Commit();
-                }
-            }
-            p2.Name = "versoin2";
-            using (var session = this._sessionFactory.OpenSession())
-            {
-                using (var tran = session.BeginTransaction())
-                {
-                    session.Update(p2);
-                    tran.Commit();
-                }
-            }
-
+            Assert.AreEqual(1, category.Products.Count);
 
         }
+
+      
     }
 }

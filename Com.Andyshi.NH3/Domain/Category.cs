@@ -12,7 +12,7 @@ namespace Com.Andyshi.NH3.Domain
             this.CreateTime = DateTime.Now;
             this.ModifyTime = DateTime.Now;
         }
-        public virtual Guid Id { get; set; }
+        public virtual Guid ID { get; set; }
 
 
         public virtual string Name { get; set; }

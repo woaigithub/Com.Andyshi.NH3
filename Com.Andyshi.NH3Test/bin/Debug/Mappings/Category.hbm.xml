@@ -3,7 +3,7 @@
                   assembly="Com.Andyshi.NH3"
                    namespace="Com.Andyshi.NH3.Domain">
   <class name="Category" table="Categories">
-    <id name="Id">
+    <id name="ID">
       <generator class="guid"></generator>
     </id>
    
@@ -12,11 +12,9 @@
      
     </property>
     <property name="ModifyTime"/>
-    <set  name="Products" >
-      <key column="CategoryId">
-
-      </key>
-      <one-to-many class="Com.Andyshi.NH3.Domain.Product, FirstSolution.Domain"/>
+    <set  name="Products" lazy="false">
+      <key column="CategoryID"></key>
+      <one-to-many class="Product"/>
     </set>
   </class>
 </hibernate-mapping>

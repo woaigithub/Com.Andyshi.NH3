@@ -12,15 +12,15 @@ namespace Com.Andyshi.NH3Test
     {
 
         [Test]
-        public void add_new_test()
+        public void test_add_category_only()
         {
             var category = new Com.Andyshi.NH3.Domain.Category();
-            category.Name = "category1";
+            category.Name = "category"+DateTime.Now.ToString();
 
             var categoryrepository = new Com.Andyshi.NH3.Repositories.CategoryRepository();
             categoryrepository.Add(category);
 
-            var product = categoryrepository.GetById(category.Id);
+            var product = categoryrepository.GetById(category.ID);
 
             Assert.IsNotNull(product);
 

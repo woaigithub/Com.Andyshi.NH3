@@ -8,17 +8,9 @@ namespace Com.Andyshi.NH3.Repositories
     public class ProductRepository : Domain.IProductRepository
     {
         public void Add(Domain.Product product)
-        {
-            //using (var session = NHibernateHelper.CreateSession())
-            //{
-            //    using (var tran = session.BeginTransaction())
-            //    {
-            //        session.Save(product);
-            //        tran.Commit();
-            //    }
-            //}
+        {      
 
-            using (var session = NHibernateHelper.CreateSession())
+            using (var session = SessionManager.Instance.CreateSession())
             {
 
                 session.Save(product);
@@ -29,7 +21,7 @@ namespace Com.Andyshi.NH3.Repositories
 
         public void Update(Domain.Product product)
         {
-            using (var session = NHibernateHelper.CreateSession())
+            using (var session = SessionManager.Instance.CreateSession())
             {
                 using (var tran = session.BeginTransaction())
                 {
@@ -42,7 +34,7 @@ namespace Com.Andyshi.NH3.Repositories
 
         public void Remove(Domain.Product product)
         {
-            using (var session = NHibernateHelper.CreateSession())
+            using (var session = SessionManager.Instance.CreateSession())
             {
                 using (var tran = session.BeginTransaction())
                 {
@@ -54,15 +46,16 @@ namespace Com.Andyshi.NH3.Repositories
 
         public Domain.Product GetById(Guid productId)
         {
-            using (var session = NHibernateHelper.CreateSession())
+            using (var session = SessionManager.Instance.CreateSession())
             {
                 return session.Get<Domain.Product>(productId);
+                
             }
         }
 
         public Domain.Product GetByName(string name)
         {
-            using (var session = NHibernateHelper.CreateSession())
+            using (var session = SessionManager.Instance.CreateSession())
             {
                 var product = session.CreateCriteria<Domain.Product>()
                     .Add(NHibernate.Criterion.Restrictions.Eq("Name", name))
@@ -74,7 +67,7 @@ namespace Com.Andyshi.NH3.Repositories
 
         public ICollection<Domain.Product> GetByCategory(Guid category)
         {
-            using (var session = NHibernateHelper.CreateSession())
+            using (var session = SessionManager.Instance.CreateSession())
             {
                 var products = session.CreateQuery("from Product");
                 return products.Enumerable<Domain.Product>().ToList();

@@ -2,9 +2,16 @@ c:\users\virus\documents\visual studio 2010\Projects\Com.Andyshi.NH3Solution\Com
 c:\users\virus\documents\visual studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3\bin\Debug\Com.Andyshi.NH3.pdb
 c:\users\virus\documents\visual studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3\bin\Debug\Iesi.Collections.dll
 c:\users\virus\documents\visual studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3\bin\Debug\NHibernate.dll
-c:\users\virus\documents\visual studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3\obj\Debug\Com.Andyshi.NH3.csprojResolveAssemblyReference.cache
 c:\users\virus\documents\visual studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3\obj\Debug\Com.Andyshi.NH3.dll
 c:\users\virus\documents\visual studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3\obj\Debug\Com.Andyshi.NH3.pdb
 C:\Users\virus\Documents\Visual Studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3\bin\Debug\hibernate.cfg.xml
 C:\Users\virus\Documents\Visual Studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3\bin\Debug\Mappings\Category.hbm.xml
 C:\Users\virus\Documents\Visual Studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3\bin\Debug\Mappings\Product.hbm.xml
+C:\Users\virus\Documents\Visual Studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3\bin\Debug\Mappings\Order.hbm.xml
+C:\Users\virus\Documents\Visual Studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3\bin\Debug\Mappings\OrderItem.hbm.xml
+C:\Users\virus\Documents\Visual Studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3\bin\Debug\log4net.config
+C:\Users\virus\Documents\Visual Studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3\bin\Debug\HibernatingRhinos.Profiler.Appender.dll
+C:\Users\virus\Documents\Visual Studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3\bin\Debug\log4net.dll
+C:\Users\virus\Documents\Visual Studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3\obj\Debug\Com.Andyshi.NH3.csprojResolveAssemblyReference.cache
+C:\Users\virus\Documents\Visual Studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3\bin\Debug\Mappings\Customer.hbm.xml
+C:\Users\virus\Documents\Visual Studio 2010\Projects\Com.Andyshi.NH3Solution\Com.Andyshi.NH3\bin\Debug\HibernatingRhinos.Profiler.Appender.NHibernateLog4Net.dll

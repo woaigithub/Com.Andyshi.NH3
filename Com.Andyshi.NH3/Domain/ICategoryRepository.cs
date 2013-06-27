@@ -17,7 +17,7 @@ namespace Com.Andyshi.NH3.Domain
 
         Category GetByName(string name);
 
-        ICollection<Product> FindProducts(string category);
+        ICollection<Product> FindProducts(Guid category);
 
        
     }

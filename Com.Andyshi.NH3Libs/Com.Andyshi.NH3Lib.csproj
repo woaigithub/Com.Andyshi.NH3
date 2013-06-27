@@ -44,7 +44,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="Libs\HibernatingRhinos.Profiler.Appender.dll" />
+    <Content Include="Libs\HibernatingRhinos.Profiler.Appender.NHibernateLog4Net.dll" />
     <Content Include="Libs\Iesi.Collections.dll" />
+    <Content Include="Libs\log4net.dll" />
     <Content Include="Libs\NHibernate.dll" />
     <Content Include="Libs\nunit.framework.dll" />
     <Content Include="Libs\nunit.mocks.dll" />
